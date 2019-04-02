@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
 body {
     font-family: "Open Sans",
     sans-serif; 
@@ -11,17 +16,40 @@ body {
     line-height: 1.5;
 }
 
+ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin: 0; 
+    position: absolute;
+    right: 20px;
+}
+
+
+li{
+    padding: 0 10px;
+}
+
+
 nav,footer{
     padding: 1% 0;
-    background-color: rgb(128, 128, 128);
+    background-color: #ddd;
 }
 
 nav {
+    display: flex;
+    /* justify-content: space-around; */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
+}
+
+h3.brand-name{
+    margin: 0;
+    white-space: nowrap;
+    align-self: flex-start;
 }
 
 header {
@@ -38,4 +66,90 @@ section {
 section:nth-child(even){
     background-color: #999;
 }
+
+i {
+    visibility: hidden;
+}
+  .side-nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: 0.3s;
+  }
+
+.side-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #dadada;
+  }
+
+
+
+/*Mobile Version - Collapsable Menu*/
+
+@media screen and (max-width:580px){
+    i.fa-bars {
+        font-size: 38px;
+        color: #000;
+        visibility: visible;
+        padding: 0 20px;
+
+    }
+    i.fa-times {
+        font-size: 38px;
+        color: #000;
+        visibility: visible;
+        padding: 10px 0 5px 22px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        visibility: hidden;
+    }
+
+    .hide-ul{
+        visibility: hidden;
+    }
+
+    .brand-name{
+        position: absolute;
+        right: 25px;
+    }
+
+    .side-nav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        opacity: 0.9;
+        overflow-x: hidden; 
+        padding-top: 60px;
+        transition: 0.5s;
+      }
+      .side-nav a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #dadada;
+      }
+      .side-nav a:hover{
+          color: #111;
+          background-color: #ddd;
+      }
+}
+
+
+
 

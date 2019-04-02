@@ -2,28 +2,51 @@
 <html lang="en">
 	<head>
 		<title>DJ Jaiswal</title>
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="stylesheet" href="main.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <nav class="nav-bar">Nav Bar</nav>
+        <nav class="nav-bar"> 
+            <div class="open-slide">
+              <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="close-slide">
+                <a href="#"><i class="fas fa-times"></i></a> 
+            </div>
+            <h3 class="brand-name">DJ Jaiswal</h3>
+            <ul class="hide-ul">
+                <li><a class="project-link" href="#project">Projects</a></li>
+                <li><a href="#toolsandtech">Tools & Tech</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="side-menu" class="side-nav">
+            <a href="#project">Projects</a>
+            <a href="#toolsandtech">Tools & Techs</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
         <main role="main">
-            <header class="banner">
-                <h1>Hero</h1>
+            <header id = "bio" class="banner">
+                <h1>Bio/Headline</h1>
             </header>
-            <section>
-                Section 1
+            <section id="project">
+                Projects
             </section>
-            <section>
-                Section 2
+            <section id="toolsandtech">
+                Tools & Technology
             </section>
-            <section>
-                section 3
+            <section id="contact">
+                Contact
             </section>
         </main>
         <footer role="content-info">
-            Footer
+            <span>&copy DJ Jaiswal</span>
+            <a class="back-to-top" href="#bio">Back To Top</a>
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
