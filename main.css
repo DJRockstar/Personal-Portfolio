@@ -8,8 +8,7 @@ a{
 }
 
 body {
-    font-family: "Open Sans",
-    sans-serif; 
+    font-family: 'Rubik', sans-serif;
     font-size: 20px;
     color: #444;
     text-align: center;
@@ -25,7 +24,6 @@ ul {
     right: 20px;
 }
 
-
 li{
     padding: 0 10px;
 }
@@ -34,6 +32,7 @@ li{
 nav,footer{
     padding: 1% 0;
     background-color: #ddd;
+    opacity: 0.5;
 }
 
 nav {
@@ -43,24 +42,28 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index:10;
 }
 
 h3.brand-name{
+    font-family: 'Karla', sans-serif;
     margin: 0;
-    white-space: nowrap;
     align-self: flex-start;
 }
 
 header {
     height: auto;
-    padding: 15%;
+    padding: 15% 2%;
 }
 
 section {
     min-height: 200px;
     background-color: #666;
     padding: 5% 0;
+}
+
+.about-me{
+    text-align: left;
 }
 
 section:nth-child(even){
@@ -93,7 +96,6 @@ i {
   }
 
 
-
 /*Mobile Version - Collapsable Menu*/
 
 @media screen and (max-width:580px){
@@ -122,6 +124,7 @@ i {
     .brand-name{
         position: absolute;
         right: 25px;
+        color: #333;
     }
 
     .side-nav{
@@ -147,6 +150,74 @@ i {
       .side-nav a:hover{
           color: #111;
           background-color: #ddd;
+      }
+
+      /* Header Section */
+
+      header#bio{
+          height: 95vh;
+      }
+      header.banner h2 {
+        font-size: 40px;
+      }
+
+      header.banner{
+          margin-top: 30%;
+      }
+
+/*    Project section */
+      div.card-container{
+        width: 70%;
+        height: 300px;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        background-color: #607d8b ;
+        margin-bottom: 1.25em;
+        color: #ddd;
+        border-radius: 2%;
+      }
+
+      .card-container:hover{
+        box-shadow: 2px 4px 4px 5px #888888;
+      }
+
+      div.prj-title-container{
+          display: block;
+      }
+      
+      div.prj-desc-container{
+          font-size: 16px;
+          /* border: 1px solid salmon; */
+          height: 50%;
+          padding-top: 1em;
+          padding-left: 5px;
+          padding-right: 5px;
+      }
+
+      div.link-container{
+          width: 100%;
+          height: 70px;
+          /* border: 1px solid black; */
+          align-self: flex-end;
+          display: flex;
+          justify-content: space-around;
+          padding-top: 10px;
+          background-color: #607d8b ;
+      }
+
+      i.fa-rocket, i.fa-github, i.fa-linkedin{
+          visibility: visible;
+          font-size: 40px;
+      }
+
+      i.fa-linkedin {
+          padding-left: 1.5em; 
+      }
+
+      i.fa-js-square,i.fa-html5 {
+        visibility: visible;
+        font-size: 32px;
+        padding-bottom: .25em;
       }
 }
 
