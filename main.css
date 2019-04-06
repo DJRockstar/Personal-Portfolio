@@ -91,7 +91,36 @@ i {
     font-size: 18px;
     color: #dadada;
   }
+/* Typewriter Animation */
 
+div.typewriter{
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.typewriter h2{
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 0.10em;
+    border-right: 0.10em solid orange;
+    animation: 
+        typing 3.5s steps(11,end),
+        blink-caret .5s step-end infinite;
+}
+
+@keyframes typing{
+    from{width: 0px}
+    to{width: 100%}
+}
+
+@keyframes blink-caret{
+    from, to{border-color: transparent}
+    50% {border-color: orange}
+}
+/* Typewriter Animation END */
 
 /*Mobile Version - Collapsable Menu*/
 
@@ -123,6 +152,13 @@ i {
         right: 25px;
         color: #113;
     }
+
+    div.typewriter{
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin: 0 auto;
+      }
 
     .side-nav{
         height: 100%;
