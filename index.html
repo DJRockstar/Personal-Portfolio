@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="start" lang="en">
 	<head>
 		<title>DJ Jaiswal</title>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
@@ -18,14 +18,14 @@
             </div>
             <h3 class="brand-name">DJ Jaiswal</h3>
             <ul class="hide-ul">
+                <li><a href="#about">About</a></li>
                 <li><a class="project-link" href="#project">Projects</a></li>
-                <li><a href="#toolsandtech">Tools & Tech</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div id="side-menu" class="side-nav">
+            <a href="#about">About</a>
             <a href="#project">Projects</a>
-            <a href="#toolsandtech">Tools & Techs</a>
             <a href="#contact">Contact</a>
         </div>
         
@@ -35,19 +35,23 @@
                 <p>But my turntable is my keyboard. 
                    <br>Where I scratch and mix to build some new cool stuffs.
                 </p>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <div class="bio-icon-container">
+                    <a href="https://github.com/DJRockstar"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/digvijay-jaiswal/"><i class="fab fa-linkedin"></i></a>   
+                </div>
             </header>
 
             <section id="about">
+                <h3 class="about-header">About</h3>
                 <p class="about-me">Hi again, I am terrible at imagining failure! That is why I chose to become a developer. 
                    <br><br> I love coding because it gives me the power and tools to create something that adds value to people’s life even if it’s a simple Quiz Game, 
-                   because i enjoy when my friends and families play the quiz and feel a sense of proud when they score better than the other person. <br><br> I geek out on creating JS Modules, Promises, API and building responsive applications.
+                   because i enjoy when my friends and families play the quiz and feel a sense of proud when they score better than the other person. <br><br> I geek out on creating <span class="para-highlight">JS Modules</span>, <span class="para-highlight">Promises</span>,<span class="para-highlight"> API</span> and building responsive applications.
                    <br><br>When I am not coding, I am probably serving my country as a specialist in US Army Reserves, reading self-improvement/biographies and playing Ukulele/Guitar and many other fun things.
                 </p>
             </section>
 
             <section id="project"> <!--Portfolio section open-->
+                <h3 class="about-header">Projects</h3>
                 <div class="card-container">
                     <div class="prj-title-container">
                         IDK App
@@ -116,12 +120,18 @@
             </section> <!--Portfolio section open-->
             
             <section id="contact">
-                Contact
+                <div class="contact-container">
+                    <a href="https://github.com/DJRockstar"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/digvijay-jaiswal/"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
             </section>
         </main>
+        <div class="bk-to-top-box">
+            <a class="back-to-top" href="#start"><i class="fas fa-arrow-circle-up"><span class="back-to-top">Back To Top</span></i></a>
+        </div>
         <footer role="content-info">
-            <span>&copy DJ Jaiswal</span>
-            <a class="back-to-top" href="#bio">Back To Top</a>
+            <span>Made with <i class="fas fa-heart"></i> by DJ Jaiswal</span>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="script.js"></script>

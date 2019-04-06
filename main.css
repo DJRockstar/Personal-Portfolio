@@ -5,6 +5,7 @@
 a{
     text-decoration: none;
     color: currentColor;
+    cursor: pointer;
 }
 
 body {
@@ -31,7 +32,7 @@ li{
 
 nav,footer{
     padding: 1% 0;
-    background-color: #ddd;
+    background-color: #eee;
     opacity: 0.5;
 }
 
@@ -56,18 +57,14 @@ header {
     padding: 15% 2%;
 }
 
-section {
-    min-height: 200px;
-    background-color: #666;
+section#contact {
+    min-height: 100px;
+    background-color: #fff;
     padding: 5% 0;
 }
 
 .about-me{
     text-align: left;
-}
-
-section:nth-child(even){
-    background-color: #999;
 }
 
 i {
@@ -121,10 +118,10 @@ i {
         visibility: hidden;
     }
 
-    .brand-name{
+    h3.brand-name{
         position: absolute;
         right: 25px;
-        color: #333;
+        color: #113;
     }
 
     .side-nav{
@@ -165,7 +162,38 @@ i {
           margin-top: 30%;
       }
 
+      .bio-icon-container{
+          margin-left: 2em;
+      }
+
+      /* About me section */
+
+      section#about{
+          padding-top: 42px;
+          background-color: #fff;
+      }
+
+      h3.about-header{
+          margin-top: 0;
+          font-family: 'Rubik', sans-serif;
+          font-size: 32px;
+          border-bottom: 1px solid #607d8b;
+      }
+
+      .para-highlight{
+          background-color: #aaa;
+          opacity: 0.7;
+          color: #111;
+      }
+
+
 /*    Project section */
+
+      section#project{
+          background-color: #fff;
+          padding-top: 42px;
+      }
+
       div.card-container{
         width: 70%;
         height: 300px;
@@ -210,14 +238,52 @@ i {
           font-size: 40px;
       }
 
-      i.fa-linkedin {
-          padding-left: 1.5em; 
+      i.fa-heart{
+          visibility: visible;
+          font-size: 16px;
+          color: red;
+      }
+
+     i.fa-linkedin {
+          margin: 0 1.0em; 
       }
 
       i.fa-js-square,i.fa-html5 {
         visibility: visible;
         font-size: 32px;
         padding-bottom: .25em;
+      }
+
+      div.bk-to-top-box{
+        display: inline;
+      }
+
+      .back-to-top{
+          font-family: 'Rubik', sans-serif;
+          display: block;
+          font-size: 9px;
+      }
+
+      i.fa-arrow-circle-up{
+        position: absolute;
+        right: 14px;
+        bottom: -260vh;
+        visibility: visible;
+        font-size: 30px;
+        opacity: 0.7;
+    }
+
+    i.fa-envelope{
+        visibility: visible;
+    }
+
+    div.contact-container a {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+      footer span{
+          font-size: 16px;
       }
 }
 
