@@ -60,7 +60,7 @@ header {
 section#contact {
     min-height: 100px;
     background-color: #fff;
-    padding: 5% 0;
+    padding: 5% 0 0 0;
 }
 
 .about-me{
@@ -255,7 +255,9 @@ i {
       }
 
       div.bk-to-top-box{
-        display: inline;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 5px;
       }
 
       .back-to-top{
@@ -264,10 +266,11 @@ i {
           font-size: 9px;
       }
 
+      a.back-to-top{
+          width: 45px;
+      }
+
       i.fa-arrow-circle-up{
-        position: absolute;
-        right: 14px;
-        bottom: -260vh;
         visibility: visible;
         font-size: 30px;
         opacity: 0.7;
