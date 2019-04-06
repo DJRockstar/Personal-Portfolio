@@ -104,7 +104,7 @@ div.typewriter{
     margin: 0 auto;
     overflow: hidden;
     white-space: nowrap;
-    letter-spacing: 0.10em;
+    letter-spacing: 0.05em;
     border-right: 0.10em solid orange;
     animation: 
         typing 3.5s steps(11,end),
@@ -156,7 +156,7 @@ div.typewriter{
     div.typewriter{
         display: flex;
         justify-content: center;
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
       }
 
