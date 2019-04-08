@@ -44,12 +44,20 @@ nav {
     left: 0;
     right: 0;
     z-index:10;
+    color: #113;
+}
+
+nav a:hover{
+    font-size: 22px;
+    color: #607d8b;
 }
 
 h3.brand-name{
     font-family: 'Karla', sans-serif;
     margin: 0;
     align-self: flex-start;
+    color: #113;
+    font-size: 28px;
 }
 
 header {
@@ -120,7 +128,169 @@ div.typewriter{
     from, to{border-color: transparent}
     50% {border-color: orange}
 }
+
 /* Typewriter Animation END */
+
+/* Header Section */
+
+    header#bio{
+        height: 90vh;
+    }
+    header.banner h2 {
+      font-size: 55px;
+    }
+
+    header.banner{
+        margin-top: 8%;
+    }
+
+    .bio-icon-container{
+        margin-left: 2em;
+    }
+
+/* About me section Desktop */
+
+    section#about{
+        padding-top: 42px;
+        background-color: #fff;
+    }
+
+    p.about-me{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    h3.about-header{
+        margin: 0 auto 20px auto;
+        font-family: 'Rubik', sans-serif;
+        font-size: 32px;
+        border-bottom: 1px solid #607d8b;
+        width: 80%;
+        padding-bottom: 20px;
+    }
+
+    .para-highlight{
+        background-color: #aaa;
+        opacity: 0.7;
+        color: #111;
+    }
+
+/*    Project section Desktop */
+
+section#project{
+    background-color: #fff;
+    padding-top: 42px;
+}
+
+.prj-container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+div.card-container{   
+  width: 30%;
+  height: 300px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  background-color: #607d8b ;
+  margin-bottom: 1.25em;
+  color: #ddd;
+  border-radius: 2%;
+}
+
+.card-container:hover{
+  box-shadow: 2px 4px 4px 5px #888888;
+}
+
+div.prj-title-container{
+    display: block;
+}
+
+div.prj-desc-container{
+    font-size: 16px;
+    /* border: 1px solid salmon; */
+    height: 50%;
+    padding-top: 1em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+div.link-container{
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid black; */
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    background-color: #607d8b ;
+}
+
+i.fa-rocket, i.fa-github, i.fa-linkedin{
+    visibility: visible;
+    font-size: 40px;
+}
+
+i.fa-rocket:hover, i.fa-github:hover, i.fa-linkedin:hover,i.fa-envelope:hover{
+    font-size: 48px;
+}
+
+i.fa-heart{
+    visibility: visible;
+    font-size: 16px;
+    color: red;
+}
+
+i.fa-linkedin {
+    margin: 0 1.0em; 
+}
+
+i.fa-js-square,i.fa-html5 {
+  visibility: visible;
+  font-size: 32px;
+  padding-bottom: .25em;
+}
+
+div.bk-to-top-box{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+  }
+
+  .back-to-top{
+      font-family: 'Rubik', sans-serif;
+      display: block;
+      font-size: 12px;
+  }
+
+  a.back-to-top{
+      width: 45px;
+  }
+
+  i.fa-arrow-circle-up{
+    visibility: visible;
+    font-size: 45px;
+    opacity: 0.7;
+}
+
+i.fa-envelope{
+    visibility: visible;
+}
+
+div.contact-container a {
+    font-size: 30px;
+    padding: 10px;
+}
+
+  footer span{
+      font-size: 16px;
+  }
+
+
+
+
 
 /*Mobile Version - Collapsable Menu*/
 
@@ -204,12 +374,12 @@ div.typewriter{
 
       /* About me section */
 
-      section#about{
+      /* section#about{
           padding-top: 42px;
           background-color: #fff;
-      }
+      } */
 
-      h3.about-header{
+      /* h3.about-header{
           margin-top: 0;
           font-family: 'Rubik', sans-serif;
           font-size: 32px;
@@ -220,14 +390,22 @@ div.typewriter{
           background-color: #aaa;
           opacity: 0.7;
           color: #111;
-      }
+      } */
+      p.about-me{
+        text-align: left;
+        width: 95%;
+    }
 
+/*    Project section Mobile */
 
-/*    Project section */
-
-      section#project{
+      /* section#project{
           background-color: #fff;
           padding-top: 42px;
+      } */
+
+      div.prj-container{
+          display: flex;
+          flex-direction: column;
       }
 
       div.card-container{
@@ -269,11 +447,11 @@ div.typewriter{
           background-color: #607d8b ;
       }
 
-      i.fa-rocket, i.fa-github, i.fa-linkedin{
+      /* i.fa-rocket, i.fa-github, i.fa-linkedin{
           visibility: visible;
           font-size: 40px;
-      }
-
+      } */
+/* 
       i.fa-heart{
           visibility: visible;
           font-size: 16px;
@@ -323,7 +501,7 @@ div.typewriter{
 
       footer span{
           font-size: 16px;
-      }
+      } */
 }
 
 
