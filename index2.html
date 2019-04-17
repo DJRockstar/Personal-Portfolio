@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html id="start" lang="en">
+	<head>
+    <title>Code Is Life</title>
+        <link rel="shortcut icon" type="image/png" href="./img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla|Rubik" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="./styles/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <nav class="nav-bar"> 
+            <div class="open-slide padding-right">
+              <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="close-slide">
+                <a href="#"><i class="fas fa-times"></i></a> 
+            </div>
+           <div>
+            <h3 class="brand-name">Software Engineer</h3>
+          </div>
+            <ul class="hide-ul">
+                <li><a href="#about">About</a></li>
+                <li><a class="project-link" href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="side-menu" class="side-nav">
+            <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <main role="main">
+            <header id = "bio" class="banner">
+                <div class="typewriter">
+                    <h2 >Hi, i'm John!</h2>
+                </div>
+                <h4>But my laptop is my handlebar
+                   <br>Where I steer my techie superpowers to build awesome apps!  
+                </h4>
+                <div class="bio-icon-container">
+                    <a href="https://github.com/spraguejdev" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/spraguejdev/" target="_blank"><i class="fab fa-linkedin"></i></a>   
+                </div>
+            </header>
+
+            <section id="about">
+              <h3 class="about-header">About</h3>
+
+                <p class="about-me">I didn't find technology. Technology found me! 
+                   <br><br> I built my first website over 6 years ago. The site was super simple, but in hindsight, this was my technical singularity. 
+                   
+                   More recently, I've realize that my quest into software engineering stems from the value that is added to one's life. Whether that value is added through building full stack applications using the latest and greatest tech stacks that breathe life into a user's computer screen or creating a microservice that fits coherently and seamlessly onto a product page, I feel proud of the user's experience. <br><br> I nerd out on creating <span class="para-highlight">React Components</span>
+                    , <span class="para-highlight">RESTful APIs</span>, <span class="para-highlight">Database Designs</span>, <span class="para-highlight">Building Responsive Applications</span>, <span class="para-highlight">Learning New Algorithms</span>, and Solving Toy Problems.
+                   <br><br>When I am not coding, I am probably optimizing my health and body, hanging out with my nephews (4 yrs old and a newborn), reading biographies, dancing, and finding time to code on personal projects (yea, I know).
+                </p>
+            </section>
+
+            <section id="project"> <!--Portfolio section open-->
+                <h3 class="about-header">Projects</h3>
+                <div class="prj-container">
+                    <div class="card-container flex-grid">
+                        <div class="prj-title-container">
+                            Visual Ecommerce (MVP)
+                        </div>
+                        <div class='sexy-line'></div>
+                        <div class="prj-desc-container">
+                          I am building a server side rendered e-commerce platform that cures the need for accessibility by giving those with reading disabilities the opportunity to participate in the online marketplace. 
+                        </div> 
+
+                        <div class="link-container" style="margin-top: 30px">
+                                <a href="http://visual-ecommerce.herokuapp.com" target="_blank"><i class="fas fa-rocket"></i></a>
+                                <a href="https://github.com/spraguejdev/visual-ecommerce/tree/development" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                      
+                      <div class="card-container flex-grid">
+                        <div class="prj-title-container">
+                          Microservice
+                        </div>
+                        <div class='sexy-line'></div>
+                        <div class="prj-desc-container">
+                          This is a complex, yet beautiful front-end responsive microservice that dynamically renders a module on a single page application.                       
+                        </div> 
+
+                        <div class="link-container" style="margin-top: 30px">
+                          <a href="http://xillowtalk-env.b6n8mafphs.us-east-2.elasticbeanstalk.com/1" target="_blank"><i class="fas fa-rocket"></i></a>
+                          <a href="https://github.com/xillow-talk/john-sprague-component-home-value" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    
+                      <div class="card-container flex-grid">
+                        <div class="prj-title-container">
+                          Scaling To Production Level Traffic
+                        </div>
+                        <div class='sexy-line'></div>
+                        <div class="prj-desc-container">
+                          Ripped out the backend of an inherited microservice and refactored to handle thousands of users navigating to the site per second.
+                        </div> 
+
+                        <div class="link-container" style="margin-top: 30px">
+                                <a href="#" target="_blank"><i class="fas fa-rocket"></i></a>
+                                <a href="https://github.com/cloud-vibes/john-sprague-comments-service" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="card-container flex-grid">
+                      <div class="prj-title-container">
+                          Web Implementation Portfolio
+                      </div>
+                      <div class='sexy-line'></div>
+                      <div class="prj-desc-container">
+                        During my time in college, I launched a web design/implementation company to help local business's increase their web presence. Check out these cool sites!
+                      </div>
+
+                      <div class="link-container" style="margin-top: 30px">
+                              <a href="http://www.branchingoutwebdesign.com" target="_blank"><i class="fas fa-rocket"></i></a>
+                              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                      </div>
+
+                  </div>
+                </div> 
+                </div>    
+            </section> <!--Portfolio section open-->
+            
+            <section id="contact">
+                <div class="contact-container">
+                    <a href="https://github.com/spraguejdev" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/spraguejdev/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:spraguejdev@gmail.com?Subject=Hello%20DJ" target="_top"><i class="fas fa-envelope"></i></a>
+                </div>
+            </section>
+        </main>
+        <div class="bk-to-top-box">
+            <a class="back-to-top" href="#start"><i class="fas fa-arrow-circle-up"><span class="back-to-top">To Top</span></i></a>
+        </div>
+        <footer role="content-info">
+            <span>Made with <i class="fas fa-heart"><a href="https://www.linkedin.com/in/digvijay-jaiswal/" target="_blank"></i> by DJ Jaiswal - </span></a>
+            <span>Beautified by John Sprague</span>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
