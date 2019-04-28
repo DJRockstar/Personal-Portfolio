@@ -104,7 +104,7 @@ i {
 div.typewriter{
   display: flex;
   justify-content: center;
-  width: 45%;
+  width: 42vh;
   margin: 0 auto;
 }
 
@@ -115,7 +115,7 @@ div.typewriter{
     letter-spacing: 0.05em;
     border-right: 0.10em solid orange;
     animation: 
-        typing 3.5s steps(21,end),
+        typing 3.0s steps(9,end),
         blink-caret .5s step-end infinite;
 }
 
