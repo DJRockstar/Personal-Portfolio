@@ -182,13 +182,13 @@ section#project{
     padding-top: 42px;
 }
 
-.prj-container{
+.flex-container{
     display: flex;
     justify-content: center;
 }
 
 div.card-container{   
-  width: 20%;
+  width: 30%;
   height: 300px;
   margin: 0 40px;
   /* border: 1px solid red; */
@@ -248,7 +248,7 @@ i.fa-linkedin {
     margin: 0 1.0em; 
 }
 
-i.fa-js-square,i.fa-html5,i.fa-google {
+i.fa-js-square,i.fa-html5,i.fa-google,i.fa-chart-line {
   visibility: visible;
   font-size: 32px;
   padding-bottom: .25em;
@@ -379,7 +379,7 @@ div.contact-container a {
 
 /*    Project section Mobile */
 
-      div.prj-container{
+      div.flex-container{
           display: flex;
           flex-direction: column;
       }
@@ -432,13 +432,13 @@ div.contact-container a {
         padding-top: 42px;
     }
 
-    .prj-container{
+    .flex-container1{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     div.card-container{   
-    width: 40%;
+    width: 60%;
     height: 300px;
     /* margin: 0 auto; */
     margin: 15px;
@@ -485,13 +485,13 @@ div.contact-container a {
         padding-top: 42px;
     }
 
-    .prj-container{
+    .flex-container{
         display: flex;
-        justify-content: stretch;
+        justify-content: space-around;
     }
 
     div.card-container{   
-    width: 100%;
+    width: 80%;
     height: 300px;
     margin: 15px;
     background-color: #607d8b ;
